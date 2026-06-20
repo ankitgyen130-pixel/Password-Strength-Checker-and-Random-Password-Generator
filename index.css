@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:None;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    background-color: black;
+}
+
+#container{
+    background-color: rgb(0, 21, 20);
+    height: 800px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 40px;
+    box-shadow: 0 0 50px aqua;
+}
+h1{
+    color: aqua;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+#criterias ul{
+    display: grid;
+    gap: 0.5em;
+}
+#password{
+    height: 2.5em;
+    width: 400px;
+    background-color: inherit;
+    border:3px solid aqua;
+    border-radius: 30px;
+    padding-left: 20px;
+    box-shadow: 0 0 20px aqua;
+}
+#feedback{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: white;
+}
+#criteria_fullfilled ul{
+    display: grid;
+    gap: 0.5em;
+    list-style-type: none;
+}
+#detected_sequence{
+    font-weight: bolder;
+    color: aqua;
+    font-size: 1.5em;
+}
+#generate_password{
+    height: 2.5em;
+    width: 200px;
+    background-color: aqua;
+    color: black;
+    border-radius: 20px;
+    transition: ease 0.2s;
+}
+#generate_password:hover{
+    box-shadow: 0 0 40px aqua;
+}
+#generate_password:active{
+    background-color: rgb(0, 137, 137);
+}
+#generated_password{
+    height: 2.5em;
+    width: 400px;
+    background-color: inherit;
+    border:2px solid aqua;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}

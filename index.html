@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Random Password Generator</h1>
+        <h2>Create a custom password:</h2>
+        Remember a strong and secure password should have the following criterias:
+        <div id="criterias">    
+            <ul>
+                <li>Length of the password <b>must</b> be greater than <b>10 characters</b>.</li>
+                <li>Password should contain <b>LOWERCASE LETTERS</b>, <b>UPPERCASE LETTERS</b>, <b>DIGITS</b> and <b>SPEIAL CHARACTERS</b>.</li>
+                <li>Strong passwords should not contain repeatating characters like <b>'aaa'</b>, <b>'$$$'</b>, <b>'000'</b> etc.</li>
+                <li>Special sequence like <b>'6789'</b>, <b>'defg'</b>, <b>'qwert'</b>, <b>'xYzW'</b> etc. should not occur in password.</li>
+            </ul>
+        </div>
+        <input id="password" type="text" placeholder="Type a strong password:">
+        <p id="feedback">Blank</p>
+        <div id="criteria_fullfilled">
+            <ul>
+                <li><span id="length_criteria_fullfilled">❌</span> Password length is greater than 10.</li>
+                <li><span id="lowercase_present">❔</span> Password contains lowercase.</li>
+                <li><span id="uppercase_present">❔</span> Password coutains uppercase.</li>
+                <li><span id="digit_present">❔</span> Password contains digits.</li>
+                <li><span id="special_character_present">❔</span> Password caontains special character.</li>
+                <li><span id="repeating_sequence_present">❔</span> Password does not contains repeatative sequence.</li>
+                <li><span id="special_sequence_present">❔</span> Detected sequence: <span id="detected_sequence">None</span></li>
+            </ul>
+        </div>
+        <button id="generate_password">Generate a Password</button>
+        <p id="generated_password"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
