@@ -10,7 +10,7 @@ body{
 }
 
 #container{
-    background-color: rgb(0, 21, 20);
+    background-color: rgb(255, 166, 0, 0.115);
     height: 800px;
     width: 900px;
     display: flex;
@@ -18,33 +18,87 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin: 20px auto;
-    border-radius: 40px;
-    box-shadow: 0 0 50px aqua;
+    border-radius: 20px;
 }
+
+
+
+
+/*Heading*/
 h1{
-    color: aqua;
     font-size: 3em;
     font-weight: 800;
     text-align: center;
 }
+#heading_span{
+    color:rgb(255, 166, 0);
+}
+
+
+
+
+
+/*Critettion*/
 #criterias ul{
     display: grid;
     gap: 0.5em;
 }
+
+
+
+
+
+
+/*Input Password*/
+#password_field{
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
 #password{
     height: 2.5em;
     width: 400px;
-    background-color: inherit;
-    border:3px solid aqua;
-    border-radius: 30px;
+    background-color: rgba(255, 166, 0, 0.115);
+    border-radius: 7px;
     padding-left: 20px;
-    box-shadow: 0 0 20px aqua;
+    font-size: 1.2rem;
 }
+#copy1{
+    height: 2.5em;
+    width: 3em;
+    background-color: rgba(255, 166, 0, 0.115);
+    color:rgb(255, 166, 0);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: ease 0.2s;
+    display:none;
+}
+#copy1:hover{
+    background-color: rgba(255, 166, 0, 0.332);
+}
+#copy1:active:{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/*feedback*/
 #feedback{
     font-size: 1.5em;
     font-weight: bolder;
     color: white;
 }
+
+
+
+
+
+
+/*critetion fullfilled or not*/
 #criteria_fullfilled ul{
     display: grid;
     gap: 0.5em;
@@ -52,31 +106,104 @@ h1{
 }
 #detected_sequence{
     font-weight: bolder;
-    color: aqua;
+    color: rgb(255, 166, 0);
     font-size: 1.5em;
 }
+
+
+
+
+
+
+
+/*generate password*/
 #generate_password{
     height: 2.5em;
     width: 200px;
-    background-color: aqua;
+    background-color: rgb(255, 166, 0);
     color: black;
-    border-radius: 20px;
+    border-radius: 7px;
     transition: ease 0.2s;
 }
 #generate_password:hover{
-    box-shadow: 0 0 40px aqua;
+    box-shadow: 0 0 40px rgb(255, 166, 0);
 }
 #generate_password:active{
-    background-color: rgb(0, 137, 137);
+    background-color: rgb(255, 230, 185);
 }
+
+
+
+
+
+
+
+
+/*Generated Password*/
 #generated_password{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#option1{
     height: 2.5em;
-    width: 400px;
-    background-color: inherit;
-    border:2px solid aqua;
-    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+#password1{
+    height: 2.5em;
+    width: 250px;
+    background-color: rgba(255, 166, 0, 0.115);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+}
+#copy2{
+    height: 2.5em;
+    width: 3em;
+    background-color: rgba(255, 166, 0, 0.115);
+    color:rgb(255, 166, 0);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: ease 0.2s;
+}
+#copy2:hover{
+    background-color: rgba(255, 166, 0, 0.332);
+}
+#copy2:active:{
+    background-color: rgb(255, 255, 255);
+}
+#option2{
+    height: 2.5em;;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+#password2{
+    height: 2.5em;
+    width: 250px;
+    background-color: rgba(255, 166, 0, 0.115);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+#copy3{
+    height: 2.5em;
+    width: 3em;
+    background-color: rgba(255, 166, 0, 0.115);
+    color:rgb(255, 166, 0);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: ease 0.2s;
+}
+#copy3:hover{
+    background-color: rgba(255, 166, 0, 0.332);
+}
+#copy3:active:{
+    background-color: rgb(255, 255, 255);
 }

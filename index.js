@@ -10,15 +10,19 @@ passwordField.addEventListener('input',()=>{
     if(strength<=0){
         feedbackField.textContent="Not Valid";
         feedbackField.style.color="white";
+        document.querySelector("#copy1").style.display="none";
     }else if(strength>0 && strength<=40){
         feedbackField.textContent="Easy";
         feedbackField.style.color="red";
+        document.querySelector("#copy1").style.display="block";
     }else if(strength>40 && strength<80){
         feedbackField.textContent="Medium";
         feedbackField.style.color="yellow";
+        document.querySelector("#copy1").style.display="block";
     }else{
         feedbackField.textContent="Hard";
         feedbackField.style.color="green";
+        document.querySelector("#copy1").style.display="block";
     }
     return;
 })
@@ -116,7 +120,8 @@ function findStrengthOfPassword(password){
 
 
 document.querySelector('#generate_password').addEventListener('click',()=>{
-    document.querySelector("#generated_password").textContent=GenerateRandomPassword();
+    document.querySelector("#password1").textContent=GenerateRandomPassword();
+    document.querySelector("#password2").textContent=GenerateRandomPassword();
 });
 function GenerateRandomPassword(){
     let randomPassword="";
@@ -127,3 +132,17 @@ function GenerateRandomPassword(){
     }
     return randomPassword;
 }
+
+
+document.querySelector("#copy1").addEventListener('click',()=>{
+    navigator.clipboard.writeText(document.querySelector("#password").value);
+    window.alert("Copied successfully!");
+})
+document.querySelector("#copy2").addEventListener('click',()=>{
+    navigator.clipboard.writeText(document.querySelector("#password1").textContent);
+    window.alert("Copied successfully!");
+})
+document.querySelector("#copy3").addEventListener('click',()=>{
+    navigator.clipboard.writeText(document.querySelector("#password2").textContent);
+    window.alert("Copied successfully!");
+})
